@@ -4,7 +4,15 @@
 
 @layer components {
   .btn-primary {
-    @apply text-green-500;
-    outline: 1px solid blue
+    @apply bg-gradient-to-r from-lightblue to-deepblue text-white px-4 py-1 rounded-full;
   }
+
+  .debug {
+    outline: 1px solid red;
+  }
+}
+
+.hero-background-mask {
+  position: absolute;
+  left: 12rem;
 }
