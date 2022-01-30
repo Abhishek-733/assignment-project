@@ -14,12 +14,15 @@
     font-family: DM Sans;
   }
   .btn-primary {
-    @apply bg-gradient-to-r from-lightblue to-deepblue text-white ;
+    @apply bg-gradient-to-r from-lightblue to-deepblue text-white;
     
   }
-
   .btn-outline {
     @apply border-2 border-lightblue text-lightblue;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
   }
 
   .btn > i.fas {

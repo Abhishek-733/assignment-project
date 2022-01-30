@@ -37,7 +37,7 @@
   <body>
     <!-- Hero section` -->
     <section
-      class="min-h-screen bg-gradient-to-b from-lightbackground to-white relative"
+      class="min-h-screen bg-gradient-to-b from-lightbackground to-white relative mb-10 md:mb-20"
     >
       <div class="hero-background-mask">
         <img src="./assets/Mask Group 2.svg" />
@@ -48,15 +48,20 @@
           <div class="logo-container mr-auto">
             <p class="text-2xl"><span class="font-bold">HIPPA</span>Texts.com</p>
           </div>
-
-          <ul class="flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
-          <li>What we do</li>
-          <li>About</li>
-          <li>Price</li>
-        </ul>
-          <button class="btn btn-primary">Get a quote
-            <i class="fas fa-long-arrow-alt-right"></i>
+          
+          <button type="button" class="md:hidden text-lg p-4">
+            <i class="fas fa-bars"></i>
           </button>
+          <div class="hidden md:flex">
+            <ul class="flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
+              <li>What we do</li>
+              <li>About</li>
+              <li>Price</li>
+            </ul>
+            <button class="btn btn-primary">Get a quote
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+        </div>
         </nav>
 
         <!-- Hero Content -->
@@ -66,14 +71,14 @@
           <!-- Text content -->
           <div class="text-section w-full flex flex-col justify-center">
             <p class="text-brandblue font-bold text-2xl">HIPAATEXTS</p>
-            <p class="font-bold text-black text-6xl my-4">
+            <p class="font-bold text-black text-4xl md:text-6xl my-4">
               eliminate patient no-shows once and for all
             </p>
             <p class="font-bold text-gray-400 text-sm">
               We’ve got your back. We’ll remind you on time
             </p>
             <div class="md:mt-10 mt-5">
-              <button class="btn btn-primary">Get a quote <i class="fas fa-long-arrow-alt-right"></i></button>
+              <button class="btn btn-primary btn-lg">Get a quote <i class="fas fa-long-arrow-alt-right"></i></button>
             </div>
           </div>
 
@@ -86,10 +91,10 @@
     </section>
 
     <!-- why hipaatexts section -->
-    <section class="min-h-screen py-10">
+    <section class="min-h-screen mb-10 md:mb-20">
       <div class="container h-full flex flex-col">
         <div
-          class="flex-grow flex md:flex-row flex-col gap-6 md:gap-40 mb-4"
+          class="flex-grow flex md:flex-row flex-col gap-6 md:gap-40"
         >
           <!-- Image -->
           <div class="img-section w-full">
@@ -98,7 +103,7 @@
 
           <!-- Text content -->
           <div class="text-section w-full flex flex-col justify-center">
-            <h1 class="font-bold text-6xl mb-4">why hipaatexts?</h1>
+            <h1 class="font-bold text-4xl md:text-6xl md:mb-4">why hipaatexts?</h1>
             <p class="font-bold text-gray-400 text-sm my-4">
               We’ve all been there—a missed dentist or doctor appointment
               because it slipped our mind to add it to our calendar or we simply
@@ -116,7 +121,7 @@
               missed appointments from happening altogether.
             </p>
             <div class="md:mt-10 mt-5">
-              <button class="btn btn-outline">Context Us <i class="fas fa-long-arrow-alt-right"></i></button>
+              <button class="btn btn-outline btn-lg">Context Us <i class="fas fa-long-arrow-alt-right"></i></button>
             </div>
           </div>
         </div>
@@ -124,12 +129,12 @@
     </section>
 
     <!-- solution section -->
-    <section class="relative mb-20">
-      <img class="absolute left-0 -bottom-10 hidden md:block" src="./assets/Group 20.png"/>
-      <img class="absolute right-0 -top-10 hidden md:block" src="./assets/Group 21.png"/>
+    <section class="relative mb-10 md:mb-20">
+      <img class="absolute left-0 -bottom-10 hidden md:block -z-10" src="./assets/Group 20.png"/>
+      <img class="absolute right-0 -top-10 hidden md:block -z-10" src="./assets/Group 21.png"/>
       <div class="container h-full">
         <div class="text-center md:w-3/4 md:mx-auto">
-          <h1 class="text-5xl font-bold mb-10">integrating a scalable, flexible, end-to-end appointment reminder solution</h1>
+          <h1 class="text-3xl md:text-5xl font-bold mb-5 md:mb-10">integrating a scalable, flexible, end-to-end appointment reminder solution</h1>
           <p class="md:px-8 text-gray-400">Whether your business is a complex communications operation like the hospital or the town’s local doctor’s office, building SMS and voice into your customer communications is easy with SMS APIs like HipaaTexts. APIs allow you to build appointment reminder logic into your own scheduling or CRM software, and provide you with enormous amounts of flexibility to customize the timing of your patient alerts and scheduling. HipaaTexts robust global network and simple-to-use API provides the the scale, flexibility, performance, and reliability to ensure appointment reminders reach patients automatically, every time. And, ultimately, SMS reminders can help stop no-shows so medical professionals can do what they do best: create a healthy patient experience every time.</p>
         </div>
       </div>
@@ -139,12 +144,11 @@
     <footer class="bg-black">
       <div class="container">
         <div class="border-b border-gray-300 text-white py-5 flex justify-between items-center">
-
           <div>
             <p class="text-whitesmoke text-lg"><span class="font-bold text-white">HIPPA</span>Texts.com</p>
             <p class="text-xs text-gray-500">Forget the no-shows</p>
           </div>
-          <ul class="flex gap-6 text-xl">
+          <ul class="flex gap-4 md:gap-6 text-xl">
             <li><i class="fab fa-facebook"></i></li>
             <li><i class="fab fa-twitter"></i></li>
             <li><i class="fab fa-instagram"></i></i></li>
