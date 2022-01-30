@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/badb10d79a.js" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp""></script> -->
     <!-- <script>
     tailwind.config = {
@@ -43,17 +44,16 @@
       </div>
       <div class="container h-full flex flex-col">
         <!-- Navbar -->
-        <nav class="flex items-center py-8">
-          <div class="logo-container text-2xl">
-            <span class="font-bold">HIPPA</span>
-            <span class="">Texts.com</span>
+        <nav class="flex items-center py-8 z-10">
+          <div class="logo-container mr-auto">
+            <p class="text-2xl"><span class="font-bold">HIPPA</span>Texts.com</p>
           </div>
 
-          <!-- <ul class="ml-auto flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
+          <ul class="flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
           <li>What we do</li>
           <li>About</li>
           <li>Price</li>
-        </ul> -->
+        </ul>
           <button class="btn-primary">Get a quote</button>
         </nav>
 
@@ -131,5 +131,24 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-black">
+      <div class="container">
+        <div class="border-b border-gray-300 text-white py-5 flex justify-between items-center">
+
+          <div>
+            <p class="text-whitesmoke text-lg"><span class="font-bold text-white">HIPPA</span>Texts.com</p>
+            <p class="text-xs text-gray-500">Forget the no-shows</p>
+          </div>
+          <ul class="flex gap-6 text-xl">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-instagram"></i></i></li>
+          </ul>
+        </div>
+        <p class="text-white text-center py-4 text-sm">Copyright 2016 HipaaTexts. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
