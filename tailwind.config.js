@@ -13,6 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        brandblue: "#2078FC",
         clifford: '#da373d',
         lightblue: '#1A75FC',
         lightbackground: '#D5E6FF',

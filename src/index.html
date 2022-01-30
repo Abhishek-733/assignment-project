@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp""></script> -->
-  <!-- <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp""></script> -->
+    <!-- <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -17,7 +23,7 @@
       }
     }
   </script> -->
-  <!-- <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
     @layer components {
       .btn-primary {
         @apply text-green-500;
@@ -25,36 +31,93 @@
       }
     }
   </style> -->
-  <title>Document</title>
-</head>
-<body>
-  <!-- Hero section` -->
-  <section class="h-screen bg-gradient-to-b from-lightbackground to-white relative">
-    <div class="hero-background-mask">
-      <img src="./assets/Mask Group 2.svg"/>
-    </div>
-    <div class="container">
-      <!-- Navbar -->
-      <nav class="flex items-center debug">
-        <div class="logo-container text-2xl py-4">
-          <span class="font-bold">HIPPA</span>
-          <span class="">Texts.com</span>
-        </div>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Hero section` -->
+    <section
+      class="min-h-screen bg-gradient-to-b from-lightbackground to-white relative"
+    >
+      <div class="hero-background-mask">
+        <img src="./assets/Mask Group 2.svg" />
+      </div>
+      <div class="container h-full flex flex-col">
+        <!-- Navbar -->
+        <nav class="flex items-center py-8">
+          <div class="logo-container text-2xl">
+            <span class="font-bold">HIPPA</span>
+            <span class="">Texts.com</span>
+          </div>
 
-        <ul class="ml-auto flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
+          <!-- <ul class="ml-auto flex gap-4 items-center border-r-2 border-gray-400 px-4 mr-4">
           <li>What we do</li>
           <li>About</li>
           <li>Price</li>
-        </ul>
-        <button class="btn-primary">Get a quote</button>
-      </nav>
+        </ul> -->
+          <button class="btn-primary">Get a quote</button>
+        </nav>
 
-      <div>
-        <div class="text section"></div>
-        <div class="img-section"></div>
+        <!-- Hero Content -->
+        <div
+          class="flex-grow flex md:flex-row flex-col-reverse gap-6 md:gap-40 mb-4"
+        >
+          <!-- Text content -->
+          <div class="text-section w-full flex flex-col justify-center">
+            <p class="text-brandblue font-bold text-2xl">HIPAATEXTS</p>
+            <p class="font-bold text-black text-6xl my-4">
+              eliminate patient no-shows once and for all
+            </p>
+            <p class="font-bold text-gray-400 text-sm">
+              We’ve got your back. We’ll remind you on time
+            </p>
+            <div class="md:mt-10 mt-5">
+              <button class="btn-primary">Get a quote</button>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="img-section w-full">
+            <img src="./assets/Group 18.png" alt="patient" />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <section class="min-h-screen">
+      <div class="container h-full flex flex-col">
+        <div
+          class="flex-grow flex md:flex-row flex-col-reverse gap-6 md:gap-40 mb-4"
+        >
+          <!-- Image -->
+          <div class="img-section w-full">
+            <img src="./assets/Group 19.png" alt="patient" />
+          </div>
+
+          <!-- Text content -->
+          <div class="text-section w-full flex flex-col justify-center">
+            <p class="font-bold text-6xl mb-4">why hipaatexts?</p>
+            <p class="font-bold text-gray-400 text-sm my-4">
+              We’ve all been there—a missed dentist or doctor appointment
+              because it slipped our mind to add it to our calendar or we simply
+              forgot to show up. Since doctors are notoriously overbooked, it’s
+              a hassle to reschedule the appointment. For patients, this
+              scenario is a hassle.
+            </p>
+            <p class="font-bold text-gray-400 text-sm">
+              But for physicians, no-shows are more than a hassle; they’re an
+              expensive problem. Studies show that patient
+              <span class="text-brandblue">no-shows can cost a
+              single doctor upwards of $150,000 a year.</span>
+              That’s why many medical
+              practitioners are adopting SMS appointment reminders to prevent
+              missed appointments from happening altogether.
+            </p>
+            <div class="md:mt-10 mt-5">
+              <button class="btn-primary">Get a quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
